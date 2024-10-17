@@ -1,0 +1,49 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row">
+    <div class="col-8 offset-2">
+<body>
+    <br><br>
+    <h3>Create a new list</h3>
+    <form action="/listings" method="POST" novalidate class="needs-validation">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" placeholder="enter title" name="listing[title]" class="form-control" required>
+            <div class="valid-feedback">it is very good title</div>
+            <div class="invalid-feedback">it is very emty</div>
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea name="listing[description]" class="form-control" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Image Link</label>
+            <input type="text" placeholder="enter image URL/link" name="listing[image]" class="form-control">
+        </div>
+        <div class="row">
+            <div class="mb-3 col-md-4">
+                <label for="price" class="form-label">Price</label>
+                <input type="number" placeholder="enter price" name="listing[price]" class="form-control" required>
+            </div>
+            <div class="mb-3 col-md-8">
+                <label for="country" class="form-label">Country</label>
+                <input type="text" placeholder="enter country" name="listing[country]" class="form-control" required>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" placeholder="enter location" name="listing[location]" class="form-control" required>
+
+        </div>
+        <button class="btn btn-dark add-btn">Add</button>
+        <br><br>
+
+    </form>
+</body>
+</div>
+</div>
+
+<!-- 1.novalidate in form tag
+2.class in form tag name(needs-validation)
+3.in all div write required
+4.in div tag one more div tag with class valid-feedback 
+5. add script file in bilerplate-->
