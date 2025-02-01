@@ -11,7 +11,7 @@ main()
 })
 
 async function main() {
-    await mongoose.connect('mongodb://127.0.0.1:27017/Pratham');
+    await mongoose.connect('mongodb+srv://jainpratham123:12345pratham@wanderlust.8vvxs.mongodb.net/?retryWrites=true&w=majority&appName=WANDERLUST');
 }
 
 const initDB = async () =>{
